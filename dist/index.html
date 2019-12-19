@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+	<form action="" method="POST" class="wrapper" id="ajax-form" onkeydown="return event.key != 'Enter';">
+		<div class="title row">
+			<h1>Здравствуйте, <font>Человек №3596941</font></h1>	
+			<a href="#" class="status-link">Сменить статус</a>
+			<div class="status"><p>Прежде чем действовать, надо понять</p><input type="text" id="status" name="status" value="Прежде чем действовать, надо понять" onkeydown="setStatus(event);"></div>
+		</div>
+
+		<div class="user-form">
+			<div class="user-form__body">
+				
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">Ваш город</div>
+					<div class="user-form__middle-column">
+						<select name="city" id="city" >							
+						</select>
+					</div>
+					<div class="userForm__right-column comment">						
+					</div>
+				</div>
+
+				<hr >
+
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">
+						Пароль
+					</div>
+					<div class="user-form__middle-column">
+						<input type="password" class="pas" id="pas" name="pas">
+						<p class="user-form__err" id="pas-err"></p>
+					</div>
+					<div class="user-form__right-column comment">
+						Ваш новый пароль должен содержать не менее 5 символов
+					</div>
+				</div>
+
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">
+						Пароль еще раз
+					</div>
+					<div class="user-form__middle-column">
+						<input type="password" class="repas" id="repas" name="repas">
+						<p class="user-form__err" id="repas-err"></p>
+					</div>
+					<div class="user-form__right-column comment">
+						Повторите пароль, пожалуйста, это обезопасит вас с нами на случай ошибки.
+					</div>
+				</div>
+
+				<hr>
+			
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">
+						Электронная почта
+					</div>
+					<div class="user-form__middle-column">
+						<input type="text" class="email" name="email">
+						<p class="user-form__err" id="email-err"></p>
+					</div>
+					<div class="user-form__right-column comment">
+						Можно изменить адрес, указанный при регистрации.
+					</div>
+				</div>
+
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">
+						Я согласен
+					</div>
+					<div class="user-form__long-column">
+						<input type="checkbox" class="agree" id="agree" name="agree"> <label for="agree">принимать актуальную информацию на email</label>
+					</div>					
+				</div>
+
+				<div class="user-form__row row">
+					<div class="user-form__left-column field-name">						
+					</div>
+					<div class="user-form__long-column">
+						<input type="button" class="submit" id="submitButton" value="Изменить"> <p class="submit-comment" id="submit-comment"></p>
+					</div>					
+				</div>
+
+			</div>
+		</div>
+	</form>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="ajax/ajax.js"></script>
+	
+</body>
+</html>
